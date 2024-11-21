@@ -1,21 +1,54 @@
+:root {
+  --primary-color: #202020;
+  --secondary-color: #ffffff;
+  --primary-font-family: "Roboto", sans-serif;
+  --secondary-font-family: "Montserrat", sans-serif;
+}
+
 body {
-  background-color: aquamarine;
+  background-color: var(--primary-color);
+  font-family: var(--primary-font-family);
+}
+
+h1,
+h2 {
+  color: var(--secondary-color);
+  font-weight: 700;
 }
 
 h1 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+  font-size: 72px;
+}
+h2 {
+  font-size: 24px;
 }
 
-h2 {
-  font-family: "Roboto", sans-serif;
+p {
+  color: var(--secondary-color);
+  opacity: 70%;
   font-weight: 400;
-  font-style: normal;
+  font-size: 18px;
 }
-h3 {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
+
+.hero {
+  background-image: url("/images/typing.jpg");
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+  text-align: center;
+  padding: 200px 0;
+  margin-top: 50px;
+}
+
+.btn-contact {
+  background-color: var(--secondary-color);
+  border-radius: 50px;
+  width: 200px;
+  height: 53px;
+  padding: 18px 30px;
+  color: #272142;
+  font-family: var(--secondary-font-family);
+
+  font-weight: bold;
+  font-size: 14px;
 }

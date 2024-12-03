@@ -28,6 +28,7 @@ p {
   opacity: 70%;
   font-weight: 400;
   font-size: 18px;
+  line-height: 30px;
 }
 
 .hero {
@@ -50,4 +51,31 @@ p {
   font-family: var(--secondary-font-family);
   font-weight: bold;
   font-size: 14px;
+}
+.btn-launch {
+  border-radius: 50px;
+  border: 1px solid var(--secondary-color);
+  width: 200px;
+  height: 53px;
+  padding: 18px 30px;
+  color: var(--secondary-color);
+  font-family: var(--secondary-font-family);
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 25px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+
+  .btn-launch {
+    display: block;
+    text-align: center;
+    margin: 30px auto;
+  }
 }
